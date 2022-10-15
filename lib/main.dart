@@ -27,6 +27,12 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+void change() {
+  // if ( String pic = 'pizza.png') {
+
+  // }
+}
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -35,7 +41,15 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Select your Pizza'),
         centerTitle: true,
       ),
-      body: const Center(child: Image(image: AssetImage('assets/pizza.png'))),
+      body: const Image(
+        image: AssetImage('assets/pizza.png'),
+        width: 50,
+        height: 50,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
