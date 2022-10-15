@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'PIzza App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: const HomePage(),
     );
@@ -33,8 +33,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select your Pizza'),
+        centerTitle: true,
       ),
-      body: const PizzaScn(),
+      body: const Center(child: Image(image: AssetImage('assets/pizza.png'))),
     );
   }
 }
